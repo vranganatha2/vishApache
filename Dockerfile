@@ -6,5 +6,5 @@ RUN apt-get install -y apache2 curl
 ADD index.html /var/www/html/
 VOLUME /var/www/html/
 
-EXPOSE 80
+EXPOSE 20
 CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]

@@ -6,7 +6,7 @@ RUN apt-get install -y apache2 curl
 
 ADD index.html /var/www/html/
 run rm /var/www/html/index.html
-ADD index.html /var/www/html/
+run cp index.html /var/www/html/
 VOLUME /var/www/html/
 
 EXPOSE 80

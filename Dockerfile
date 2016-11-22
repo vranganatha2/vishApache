@@ -2,7 +2,7 @@
 FROM ubuntu:12.04
 RUN apt-get update
 RUN apt-get install -y apache2 curl
-
+rm -rf /var/www/html/index.html
 ADD index.html /var/www/html/
 VOLUME /var/www/html/
 
@@ -10,5 +10,5 @@ EXPOSE 80
 
 CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
 
-/etc/init.d/apache2 restart
+
 

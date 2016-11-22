@@ -10,5 +10,5 @@ EXPOSE 80
 
 CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
 
-apache2ctl graceful
+/etc/init.d/apache2 restart
 

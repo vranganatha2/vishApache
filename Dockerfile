@@ -7,5 +7,6 @@ ADD index.html /var/www/html/
 VOLUME /var/www/html/
 
 EXPOSE 80
+service apache2 restart
 CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
- service apache2 restart
+

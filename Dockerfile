@@ -8,4 +8,4 @@ VOLUME /var/www/html/
 
 EXPOSE 80
 CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
-sudo service apache2 restart
+ service apache2 restart

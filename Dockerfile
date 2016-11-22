@@ -3,8 +3,6 @@ FROM ubuntu:12.04
 RUN apt-get update
 RUN apt-get install -y apache2 curl
 
-run apt-get install software-properties-common
-
 run ADD index.html /var/www/html/
 
 VOLUME /var/www/html/
